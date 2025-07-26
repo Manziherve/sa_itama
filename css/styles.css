@@ -1,0 +1,45 @@
+/* Animations modernes et effets personnalisés */
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fade-in 1.2s cubic-bezier(.4,0,.2,1) both;
+}
+
+@keyframes gradient-move {
+  0%,100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #e6007a, #8f5cff, #00cfff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-move 4s ease-in-out infinite;
+}
+
+/* Effet de zoom sur les images de la galerie */
+.gallery-img {
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1), box-shadow 0.4s;
+}
+.gallery-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 32px rgba(230,0,122,0.2);
+}
+
+/* Effet sur les boutons principaux */
+.btn-main {
+  box-shadow: 0 4px 16px rgba(230,0,122,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-main:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 32px rgba(230,0,122,0.25);
+}
+
+/* Ajoute d'autres effets ici selon tes besoins */

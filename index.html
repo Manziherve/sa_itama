@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Saitama</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/main.js"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Header / Navigation -->
+  <header class="fixed w-full z-20 top-0 left-0 bg-black bg-opacity-80 border-b border-gray-800 fade-in">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#" class="text-2xl font-bold uppercase tracking-widest gradient-text">DJ Saitama</a>
+      <nav id="nav" class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-pink-500 transition font-semibold">Accueil</a>
+        <a href="#bio" class="hover:text-pink-500 transition font-semibold">Bio</a>
+        <a href="#dates" class="hover:text-pink-500 transition font-semibold">Dates</a>
+        <a href="#music" class="hover:text-pink-500 transition font-semibold">Musique</a>
+        <a href="#gallery" class="hover:text-pink-500 transition font-semibold">Galerie</a>
+        <a href="#contact" class="hover:text-pink-500 transition font-semibold">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section id="home" class="relative h-screen w-full bg-cover bg-center flex items-center justify-center fade-in" style="background-image: url('assets/images/auxplatines.png');">
+  <div class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-md transition-opacity duration-700"></div>
+  <div class="relative z-10 p-8 rounded-xl text-center">
+    <h1 class="text-6xl md:text-8xl font-extrabold uppercase tracking-widest drop-shadow-lg gradient-text fade-in">DJ Saitama</h1>
+    <p class="mt-6 text-xl md:text-3xl font-semibold opacity-90 fade-in">Djing Technician & Liege Party Icon</p>
+    <a href="#music" class="mt-10 inline-flex items-center gap-3 bg-pink-500 text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg btn-main">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6h13M9 6l-7 7 7 7" /></svg>
+      Écouter
+    </a>
+  </div>
+</section>
+
+  <!-- Bio Section -->
+  <section id="bio" class="py-20 px-6 md:px-32 bg-black text-center">
+    <h2 class="text-3xl font-bold uppercase mb-6">Biographie</h2>
+    <p class="max-w-2xl mx-auto text-lg opacity-80">Icône liegeoise des soirées urbaines, DJ Saitama fait vibrer les foules depuis plus de 10 ans. Son énergie, sa passion et ses sets légendaires ont marqué l’histoire des soirées liegeoise.</p>
+  </section>
+
+  <!-- Tour Dates Section -->
+  <section id="dates" class="py-20 px-6 md:px-32 bg-gray-900">
+    <h2 class="text-3xl font-bold uppercase mb-8">Dates de tournée</h2>
+    <ul class="space-y-4 max-w-2xl mx-auto">
+      <li class="flex justify-between border-b border-gray-700 pb-2">
+        <span>24 Août 2025</span>
+        <span>Paris, France</span>
+      </li>
+      <li class="flex justify-between border-b border-gray-700 pb-2">
+        <span>31 Août 2025</span>
+        <span>Berlin, Allemagne</span>
+      </li>
+      <li class="flex justify-between border-b border-gray-700 pb-2">
+        <span>7 Sept 2025</span>
+        <span>Amsterdam, Pays-Bas</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Music Section -->
+  <section id="music" class="py-20 px-6 md:px-32 bg-black">
+    <h2 class="text-3xl font-bold uppercase mb-8">Derniers morceaux</h2>
+    <div class="aspect-w-16 aspect-h-9 mb-8">
+      <iframe class="w-full h-96" scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1343537113&color=%23ff0080&auto_play=false&show_artwork=true">
+      </iframe>
+    </div>
+    <div class="flex flex-wrap justify-center gap-6">
+      <a href="#" class="bg-gray-800 px-6 py-3 rounded-full hover:bg-pink-500 transition">Spotify</a>
+      <a href="#" class="bg-gray-800 px-6 py-3 rounded-full hover:bg-pink-500 transition">Apple Music</a>
+      <a href="#" class="bg-gray-800 px-6 py-3 rounded-full hover:bg-pink-500 transition">Deezer</a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 px-6 md:px-32 bg-gray-900">
+    <h2 class="text-3xl font-bold uppercase mb-8">Galerie</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in">
+      <img src="assets/images/auphone.png" alt="DJ Saitama 1" class="gallery-img rounded-lg shadow-lg">
+      <img src="assets/images/aumic.png" alt="DJ Saitama 2" class="gallery-img rounded-lg shadow-lg">
+      <img src="assets/images/fondang.png" alt="DJ Saitama 3" class="gallery-img rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 md:px-32 bg-black text-center">
+    <h2 class="text-3xl font-bold uppercase mb-8">Contact</h2>
+    <form class="max-w-xl mx-auto space-y-6">
+      <input type="text" placeholder="Nom" class="w-full px-4 py-3 rounded bg-gray-800 text-white focus:outline-none">
+      <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded bg-gray-800 text-white focus:outline-none">
+      <textarea placeholder="Message" class="w-full px-4 py-3 rounded bg-gray-800 text-white focus:outline-none"></textarea>
+      <button type="submit" class="bg-pink-500 text-white px-8 py-3 rounded-full font-semibold btn-main">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center py-8 text-sm mt-12 fade-in">
+    <p class="gradient-text">&copy; 2025 DJ Saitama. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
